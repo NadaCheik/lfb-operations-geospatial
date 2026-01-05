@@ -18,6 +18,9 @@ Public London Fire Brigade incident data (not included in this repository).
 3. Compute KPI tables for Power BI (`src/analysis_kpis.py`)
 4. Build the dashboard in Power BI (`powerbi/`)
 
+### Dashboard overview
+![Power BI Overview](powerbi/screenshots/overview.png)
+
 ## ▶️ Run the project
 ```bash
 pip install -r requirements.txt

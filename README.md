@@ -1,38 +1,26 @@
 # 🚒 London Fire Brigade — Operational & Geospatial Analysis
 
-End-to-end data analysis project based on public London Fire Brigade data, aiming to evaluate operational performance and optimize emergency response.
+End-to-end data analysis project based on public London Fire Brigade data, focused on operational performance (response times) and spatial patterns to support decision-making.
 
-## 🎯 Business objectives
-- Measure response time performance across incidents and areas
-- Identify spatial hotspots and high-risk zones
-- Support operational decision-making with data-driven insights
+## 🎯 Objectives
+- Measure response-time performance across areas
+- Produce operational KPIs and identify slow-response zones
+- Prepare clean datasets for dashboarding in Power BI
 
 ## 📁 Dataset
-- Public London Fire Brigade incident data
-- Spatio-temporal operational records (calls, turnout, travel, response times)
+Public London Fire Brigade incident data (not included in this repository).
 
-## 🔄 Data pipeline
-1. Data ingestion & schema checks
-2. Cleaning & data quality controls
-3. KPI computation & feature engineering
-4. Geospatial analysis & modeling
-5. Export for Power BI dashboarding
+**Note:** raw data is not shared due to size/licensing constraints. This repository contains the full pipeline and outputs structure.
 
-## 📊 Dashboard (Power BI)
-Interactive dashboard including:
-- Response time KPIs
-- Incident distribution by area
-- Hotspot maps
-- Temporal trends
+## 🔄 Project pipeline
+1. Load raw data (`src/load_data.py`)
+2. Clean & build response time metric (`src/clean_data.py`)
+3. Compute KPI tables for Power BI (`src/analysis_kpis.py`)
+4. Build the dashboard in Power BI (`powerbi/`)
 
-*(Screenshots to be added)*
-
-## 🛠️ Tech stack
-- Python (pandas, GeoPandas, scikit-learn)
-- SQL
-- Power BI
-
-## 📌 Key outcomes
-- Identification of response-time slow zones
-- Strong seasonal and time-of-day effects
-- Operational scenarios to reduce median response time
+## ▶️ Run the project
+```bash
+pip install -r requirements.txt
+python src/load_data.py
+python src/clean_data.py
+python src/analysis_kpis.py

@@ -10,7 +10,7 @@ End-to-end data analysis project based on public London Fire Brigade data, focus
 ## 📓 Analysis notebook
 The full analysis is available in the Jupyter notebook:
 
-➡️ `notebooks/lfb_analysis.ipynb`
+➡️ [Open the notebook](notebooks/lfb_analysis.ipynb)
 
 The notebook covers:
 - Data cleaning and preparation
@@ -21,7 +21,10 @@ The notebook covers:
 ## 📊 Power BI Dashboard
 The final dashboard is built in Power BI and illustrated with screenshots:
 
-➡️ `powerbi/screenshots/`
+➡️ [To see the dasbhoard screenshots](powerbi/screenshots/)
+
+### Dashboard Overview
+![Power BI Overview](powerbi/screenshots/image (1).png)
 
 The dashboard focuses on:
 - Operational KPIs

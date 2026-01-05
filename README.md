@@ -1,29 +1,40 @@
 # 🚒 London Fire Brigade — Operational & Geospatial Analysis
 
-End-to-end data analysis project based on public London Fire Brigade data, focused on operational performance (response times) and spatial patterns to support decision-making.
+End-to-end data analysis project based on public London Fire Brigade data, focused on operational performance, response times, and spatial patterns to support decision-making.
 
-## 🎯 Objectives
-- Measure response-time performance across areas
-- Produce operational KPIs and identify slow-response zones
-- Prepare clean datasets for dashboarding in Power BI
+## 🎯 Project objectives
+- Analyze emergency response times and operational KPIs
+- Identify spatial and temporal hotspots
+- Support resource allocation and operational optimization
+
+## 📓 Analysis notebook
+The full analysis is available in the Jupyter notebook:
+
+➡️ `notebooks/lfb_analysis.ipynb`
+
+The notebook covers:
+- Data cleaning and preparation
+- KPI computation (response times, percentiles)
+- Spatio-temporal and geospatial analysis
+- Key insights and interpretation
+
+## 📊 Power BI Dashboard
+The final dashboard is built in Power BI and illustrated with screenshots:
+
+➡️ `powerbi/screenshots/`
+
+The dashboard focuses on:
+- Operational KPIs
+- Temporal trends
+- Geographic distribution of incidents
+- Decision-oriented views for operational teams
 
 ## 📁 Dataset
-Public London Fire Brigade incident data (not included in this repository).
+Public London Fire Brigade incident data.
 
-**Note:** raw data is not shared due to size/licensing constraints. This repository contains the full pipeline and outputs structure.
+**Note:** raw data is not included in this repository due to size and licensing constraints.
 
-## 🔄 Project pipeline
-1. Load raw data (`src/load_data.py`)
-2. Clean & build response time metric (`src/clean_data.py`)
-3. Compute KPI tables for Power BI (`src/analysis_kpis.py`)
-4. Build the dashboard in Power BI (`powerbi/`)
-
-### Dashboard overview
-![Power BI Overview](powerbi/screenshots/overview.png)
-
-## ▶️ Run the project
-```bash
-pip install -r requirements.txt
-python src/load_data.py
-python src/clean_data.py
-python src/analysis_kpis.py
+## 🛠️ Tools
+- Python (pandas, geopandas, scikit-learn)
+- Jupyter Notebook
+- Power BI

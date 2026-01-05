@@ -23,9 +23,6 @@ The final dashboard is built in Power BI and illustrated with screenshots:
 
 ➡️ [To see the dasbhoard screenshots](powerbi/screenshots/)
 
-### Dashboard Overview
-![Power BI Overview](powerbi/screenshots/image (1).png)
-
 The dashboard focuses on:
 - Operational KPIs
 - Temporal trends
